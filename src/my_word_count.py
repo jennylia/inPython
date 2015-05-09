@@ -16,6 +16,8 @@ def read_files(dir):
 			for line in f:
 				line = (line.lower())
 				line = line.replace(',','')
+				line = line.replace('\'','')				
+				line = line.replace('-','')				
 				line = line.replace('.','')
 				for word in line.split():
 					cnt[word] += 1
@@ -25,7 +27,7 @@ def read_files(dir):
 	out = open('wc_output/wc_result.txt', 'w')
 	cnt = sorted(cnt.items(), key=itemgetter(0))
 	for x in cnt:
-		out.write(x[0] +" "+ str(x[1]) + '\n')
+		out.write(x[0] +"\t"+ str(x[1]) + '\n')
 
 	out.close()
 	print "please check wc_result.txt now"
