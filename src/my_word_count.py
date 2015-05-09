@@ -24,18 +24,13 @@ def read_files(dir):
 	
 	out = open('wc_output/wc_result.txt', 'w')
 	cnt = sorted(cnt.items(), key=itemgetter(0))
-	print cnt
 	for x in cnt:
-		print x[0] 
-		print x[1]
 		out.write(x[0] +" "+ str(x[1]) + '\n')
 
 	out.close()
-
-
-
-
+	print "please check wc_result.txt now"
 
 
 if __name__ == "__main__":
+	print "starting the word count"
 	read_files("wc_input")
