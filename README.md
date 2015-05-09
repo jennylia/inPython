@@ -1,4 +1,4 @@
-Insight Data Engineering - Coding Challenge
+Jenny Lian
 ===========================================================
 
 One of the first problems you’ll encounter in data engineering is Word Count, which takes in a text file or set of text files from a directory and outputs the number of occurrences for each word.  For example, Word Count on a file containing the following passage:
