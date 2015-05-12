@@ -1,4 +1,7 @@
-a	3
+a	83
+aa	11
+b	15
+bb	15
 big	3
 call	3
 every	4
